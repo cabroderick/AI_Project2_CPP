@@ -2,6 +2,11 @@
 //
 
 #include <iostream>
+#include <vector>
+
+std::vector<int> moves; //moves made by the AI
+std::vector<int> opponentMoves; //moves made by the opponent
+
 
 int main()
 {
