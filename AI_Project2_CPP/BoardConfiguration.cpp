@@ -1,5 +1,5 @@
 #include <vector>
-#include <BoardConfiguration.h>
+#include "BoardConfiguration.h"
 
 using namespace std;
 
