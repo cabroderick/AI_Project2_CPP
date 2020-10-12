@@ -11,8 +11,8 @@ public:
   }
   BoardConfiguration placeStone(int col, int inputRow, int player) {
     boardList[col][row] = player;
-      occupiedSpaces.push_back(make_pair(col,row));
-
+    occupiedSpaces.push_back(make_pair(col,row));
+  }
 
 private:
   //initializes the board
