@@ -15,6 +15,16 @@ public:
   }
 
 private:
+    enum pathEvalValues {
+        DEADTWO = 4,
+        LIVETWO = 5,
+        DEADTHREE = 6,
+        LIVETHREE = 7,
+        DEADFOUR = 8,
+        LIVEFOUR = 9,
+        FIVE = 10
+    } thePointWeights;
+    
   //initializes the board
   void initBoardRange() {
     for (size_t col = 0; cow < boardSize; col++) {
