@@ -3,23 +3,25 @@
 
 #include <iostream>
 #include <vector>
+#include <fstream>
+#include "Move.h"
 
-std::vector<int> moves; //moves made by the AI
-std::vector<int> opponentMoves; //moves made by the opponent
+using namespace std;
 
+vector<Move> moves; //moves made by the AI
+vector<Move> opponentMoves; //moves made by the opponent
+int moveNum = 0; //the turn# for the game
 
 int main()
 {
     std::cout << "Hello World!\n";
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+//function that is repeatedly called until game is over
+void PlayGame() {
+  ifstream infile("Sigmoid.go");
+  while !(infile.good()) {} //will loop until gofile exists
+  infile.close()
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+  PlayGame(); //re call PlayGame until game has ended
+}
