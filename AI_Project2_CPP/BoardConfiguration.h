@@ -4,12 +4,8 @@ using namespace std;
 
 class BoardConfiguration {
 private:
-  int boardSize;
-  vector<vector<int>> boardList;
-  vector<pair<int,int>> occupiedSpaces;
-  void initBoardRange();
-  enum pathEvalValues;
-
+	void initBoardRange();
 public:
-  BoardConfiguration();
-}
+	BoardConfiguration();
+	BoardConfiguration* placeStone(int col, int row, int player);
+};
