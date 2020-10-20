@@ -52,7 +52,7 @@ void makeMove() {
 
     }
     else {
-        BoardConfiguration* lastMove = &opponentMoves.back();
+        BoardConfiguration* lastMove = opponentMoves.back();
         BoardConfiguration* newMove = miniMax(lastMove, 5);
         board = *newMove;
         int col = newMove->getLatestMove().first;
