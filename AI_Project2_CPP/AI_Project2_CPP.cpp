@@ -9,8 +9,7 @@
 using namespace std;
 
 BoardConfiguration board; //the actual game board
-vector<BoardConfiguration*> moves; //moves made by the AI
-vector<BoardConfiguration*> opponentMoves; //moves made by the opponent
+vector<BoardConfiguration*> moves; //moves made in the game
 int moveNum = 0; //the turn# for the game
 string teamName = "Sigmoid"; //the team name to use; by default Sigmoid if no arguments are passed in
 
@@ -52,7 +51,7 @@ void makeMove() {
 
     }
     else {
-        BoardConfiguration* lastMove = opponentMoves.back();
+        BoardConfiguration* lastMove = moves.back();
         BoardConfiguration* newMove = miniMax(lastMove, 5);
         board = *newMove;
         int col = newMove->getLatestMove().first;
