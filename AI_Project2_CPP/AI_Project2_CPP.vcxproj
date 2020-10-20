@@ -141,13 +141,9 @@
   <ItemGroup>
     <ClCompile Include="AI_Project2_CPP.cpp" />
     <ClCompile Include="BoardConfiguration.cpp" />
-    <ClCompile Include="MiniMaxNode.cpp" />
-    <ClCompile Include="Move.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BoardConfiguration.h" />
-    <ClInclude Include="MiniMaxNode.h" />
-    <ClInclude Include="Move.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
